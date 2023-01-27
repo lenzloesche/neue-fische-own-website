@@ -241,4 +241,13 @@ textarea:hover {
   h3 {
     font-size: 16px;
   }
+  .about {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .linkimage {
+    width: 102px;
+    height: auto;
+  }
 }
