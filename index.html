@@ -6,39 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Lenz Lösches Homepage</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body id="body">
     <header></header>
     <nav>
-      <div class="navdiv" id="navdiv">
-        <h3 class="navelement"><a href="#body">Home</a> -</h3>
+      <ul class="navdiv" id="navdiv">
+        <li class="navelement"><a href="#body">Home</a> -</li>
 
-        <h3 class="navelement"><a href="#lebenslauf">About</a> -</h3>
+        <li class="navelement"><a href="#lebenslauf">About</a> -</li>
 
-        <h3 class="navelement"><a href="#skills">Skills</a> -</h3>
+        <li class="navelement"><a href="#skills">Skills</a> -</li>
 
-        <h3 class="navelement"><a href="#links">Links</a> -</h3>
+        <li class="navelement"><a href="#links">Links</a> -</li>
 
-        <h3 class="navelement"><a href="#kontakt">Contact</a></h3>
+        <li class="navelement"><a href="#kontakt">Contact</a></li>
 
         <div class="arrow" id="arrow">
-          <img class="arrowimg" src="bilder/arrow.gif" alt="" />
+          <img class="arrowimg" src="bilder/arrow.gif" alt="Arrow" />
         </div>
-      </div>
+      </ul>
     </nav>
     <main>
-      <div class="containerdiv background-welcome positionrelative">
+      <section class="containerdiv background-welcome positionrelative">
         <br /><br />
         <br /><br />
         <figure align="center" class="figure">
-          <img src="/bilder/lenz.jpg" class="image" />
+          <img
+            src="/bilder/lenz.jpg"
+            class="image"
+            alt="Lenz Lösche sitting at desk"
+          />
         </figure>
-      </div>
+      </section>
       <div class="line"></div>
 
-      <div class="containerdiv background-vita" align="center" id="lebenslauf">
-        <div class="vitatable">
+      <section
+        class="containerdiv background-vita"
+        align="center"
+        id="lebenslauf"
+      >
+        <article class="vitatable">
           <div class="about">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
@@ -52,10 +60,10 @@
               blanditiis reprehenderit dignissimos voluptas. Voluptatibus!
             </p>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
       <div class="line"></div>
-      <div class="containerdiv background-skills" id="skills">
+      <section class="containerdiv background-skills" id="skills">
         <div class="skillsgrid">
           <div class="skillitem"><p>HTML</p></div>
           <div class="skillitem"><p>CSS</p></div>
@@ -65,29 +73,41 @@
           <div class="skillitem"><p>Github</p></div>
           <div class="skillitem"><p>CleanCode</p></div>
         </div>
-      </div>
+      </section>
       <div class="line"></div>
 
-      <div class="containerdiv background-links">
+      <section class="containerdiv background-links">
         <div id="links" class="linkscontainer">
           <div class="linksflexitem">
-            <a href="">
+            <a href="https://github.com/lenzloesche">
               <figure>
-                <img class="linkimage" src="/bilder/link.jpeg" alt="" />
+                <img
+                  class="linkimage"
+                  src="/bilder/link.jpeg"
+                  alt="empty link"
+                />
                 <figcaption align="center">Github</figcaption>
               </figure>
             </a>
 
             <a href="">
               <figure>
-                <img class="linkimage" src="/bilder/link.jpeg" alt="" />
+                <img
+                  class="linkimage"
+                  src="/bilder/link.jpeg"
+                  alt="empty link"
+                />
                 <figcaption align="center">Linkedin</figcaption>
               </figure>
             </a>
 
             <a href="">
               <figure>
-                <img class="linkimage" src="/bilder/link.jpeg" alt="" />
+                <img
+                  class="linkimage"
+                  src="/bilder/link.jpeg"
+                  alt="empty link"
+                />
                 <figcaption align="center">Xing</figcaption>
               </figure>
             </a>
@@ -96,36 +116,48 @@
             <p>
               <a href="">
                 <figure>
-                  <img class="linkimage" src="/bilder/link.jpeg" alt="" />
+                  <img
+                    class="linkimage"
+                    src="/bilder/link.jpeg"
+                    alt="empty link"
+                  />
                   <figcaption align="center">GitHub</figcaption>
                 </figure>
               </a>
 
               <a href="">
                 <figure>
-                  <img class="linkimage" src="/bilder/link.jpeg" alt="" />
+                  <img
+                    class="linkimage"
+                    src="/bilder/link.jpeg"
+                    alt="empty link"
+                  />
                   <figcaption align="center">freecodecamp</figcaption>
                 </figure>
               </a>
 
               <a href="">
                 <figure>
-                  <img class="linkimage" src="/bilder/link.jpeg" alt="" />
+                  <img
+                    class="linkimage"
+                    src="/bilder/link.jpeg"
+                    alt="empty link"
+                  />
                   <figcaption align="center">Link</figcaption>
                 </figure>
               </a>
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <div class="line"></div>
 
-      <div class="containerdiv background-contact">
+      <section class="containerdiv background-contact">
         <div id="kontakt" align="center">
           <form>
             <div class="contactcontainer">
               <label for="email">Your Email Adress: </label>
-              <input type="email" />
+              <input type="email" id="email" />
 
               <label for="text">Your Message: </label>
               <textarea id="text" cols="20" rows="10"></textarea>
@@ -134,7 +166,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </section>
     </main>
     <div class="line"></div>
 

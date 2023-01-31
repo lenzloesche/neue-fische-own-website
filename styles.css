@@ -40,6 +40,8 @@ nav {
   border-radius: 10px;
   background-color: #fabb1a;
   position: relative;
+  font-size: 24px;
+  list-style: none;
 }
 
 .navdiv:hover {
@@ -169,11 +171,6 @@ input[type="text"] {
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
-
-/* .skillitem:hover {
-  background-color: rgb(64, 55, 140);
-  cursor: pointer;
-} */
 
 @keyframes circleanimation {
   0% {
