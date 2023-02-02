@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(./Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+a:hover {
+  color: rgb(18, 0, 185);
+}

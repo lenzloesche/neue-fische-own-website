@@ -1,0 +1,45 @@
+.background-contact {
+  background-color: #fa5934;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 95vw;
+  font-size: 26px;
+}
+input[type="email"] {
+  height: 40px;
+  width: 80vw;
+  box-shadow: 5px 5px 20px;
+  padding: 8px;
+}
+input,
+textarea {
+  font-size: 26px;
+  box-shadow: 5px 5px 20px;
+  border-radius: 20px;
+}
+
+textarea {
+  padding: 10px;
+  box-shadow: 5px 5px 20px;
+  width: 80vw;
+}
+
+input[type="submit"] {
+  padding: 3px;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 340px) {
+  input[type="email"],
+  textarea {
+    width: 300px;
+  }
+  textarea {
+    width: 300px;
+  }
+}

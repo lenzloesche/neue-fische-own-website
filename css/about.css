@@ -1,0 +1,27 @@
+.background-vita {
+  background-color: #fa8334;
+}
+.about {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 24px;
+}
+
+.about__text {
+  max-width: 600px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 30px;
+  border: 4px solid black;
+  background-color: #ffd95c;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+  .about__text {
+    font-size: 24px;
+  }
+}
