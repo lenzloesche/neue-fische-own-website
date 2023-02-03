@@ -9,29 +9,32 @@
     <script src="script.js" defer></script>
   </head>
   <body id="body">
-    <header></header>
-    <nav>
-      <ul class="nav" id="navdiv">
-        <li class="nav__element"><a href="#body">Home</a> -</li>
+    <header>
+      <nav>
+        <ul class="nav" id="navdiv">
+          <li class="nav__element"><a href="#body">Home</a> -</li>
 
-        <li class="nav__element"><a href="#lebenslauf">About</a> -</li>
+          <li class="nav__element"><a href="#lebenslauf">About</a> -</li>
 
-        <li class="nav__element"><a href="#skills">Skills</a> -</li>
+          <li class="nav__element"><a href="#skills">Skills</a> -</li>
 
-        <li class="nav__element"><a href="#links">Links</a> -</li>
+          <li class="nav__element"><a href="#links">Links</a> -</li>
 
-        <li class="nav__element"><a href="#kontakt">Contact</a></li>
+          <li class="nav__element"><a href="#kontakt">Contact</a></li>
+          <li>
+            <div class="nav__arrow" id="arrow">
+              <img class="nav__arrow-img" src="bilder/arrow.gif" alt="Arrow" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="nav__arrow" id="arrow">
-          <img class="nav__arrow-img" src="bilder/arrow.gif" alt="Arrow" />
-        </div>
-      </ul>
-    </nav>
     <main>
       <section class="containerdiv background-welcome positionrelative">
         <br /><br />
         <br /><br />
-        <figure align="center" class="figure">
+        <figure class="figure">
           <img
             src="/bilder/lenz.jpg"
             class="lenz-image"
@@ -41,11 +44,7 @@
       </section>
       <div class="line"></div>
 
-      <section
-        class="containerdiv background-vita"
-        align="center"
-        id="lebenslauf"
-      >
+      <section class="containerdiv background-vita" id="lebenslauf">
         <article class="about">
           <div class="about__text">
             <p>
@@ -64,15 +63,15 @@
       </section>
       <div class="line"></div>
       <section class="containerdiv background-skills" id="skills">
-        <div class="skill">
-          <div class="skill__item"><p>HTML</p></div>
-          <div class="skill__item"><p>CSS</p></div>
-          <div class="skill__item"><p>JavaScript</p></div>
-          <div class="skill__item"><p>React</p></div>
-          <div class="skill__item"><p>Git</p></div>
-          <div class="skill__item"><p>Github</p></div>
-          <div class="skill__item"><p>CleanCode</p></div>
-        </div>
+        <ul class="skill">
+          <li class="skill__item"><p>HTML</p></li>
+          <li class="skill__item"><p>CSS</p></li>
+          <li class="skill__item"><p>JavaScript</p></li>
+          <li class="skill__item"><p>React</p></li>
+          <li class="skill__item"><p>Git</p></li>
+          <li class="skill__item"><p>Github</p></li>
+          <li class="skill__item"><p>CleanCode</p></li>
+        </ul>
       </section>
       <div class="line"></div>
 
@@ -85,7 +84,7 @@
                 src="/bilder/github.jpeg"
                 alt="GitHub Logo"
               />
-              <figcaption align="center">Github</figcaption>
+              <figcaption>Github</figcaption>
             </figure>
           </a>
 
@@ -96,7 +95,7 @@
                 src="/bilder/linkedin.jpeg"
                 alt="Linkedin Logo"
               />
-              <figcaption align="center">Linkedin</figcaption>
+              <figcaption>Linkedin</figcaption>
             </figure>
           </a>
 
@@ -107,7 +106,7 @@
                 src="/bilder/xing.jpeg"
                 alt="Xing Logo"
               />
-              <figcaption align="center">Xing</figcaption>
+              <figcaption>Xing</figcaption>
             </figure>
           </a>
 
@@ -120,7 +119,7 @@
                 src="/bilder/freecodecamp.jpeg"
                 alt="Freecodecamp Logo"
               />
-              <figcaption align="center">freecodecamp</figcaption>
+              <figcaption>freecodecamp</figcaption>
             </figure>
           </a>
         </div>
@@ -128,7 +127,7 @@
       <div class="line"></div>
 
       <section class="containerdiv background-contact">
-        <div id="kontakt" align="center">
+        <div id="kontakt">
           <form>
             <div class="contact">
               <label for="email">Your Email Adress: </label>
@@ -146,7 +145,7 @@
     <div class="line"></div>
 
     <footer class="background-footer">
-      <p align="center">Copyright Lenz Lösche 2023</p>
+      <p>Copyright Lenz Lösche 2023</p>
     </footer>
   </body>
 </html>
