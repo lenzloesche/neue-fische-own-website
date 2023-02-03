@@ -6,128 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Lenz Lösches Homepage</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body id="body">
-    <header></header>
-    <nav>
-      <div class="navdiv" id="navdiv">
-        <h3 class="navelement"><a href="#body">Home</a> -</h3>
+    <header>
+      <nav>
+        <ul class="nav" id="navdiv">
+          <li class="nav__element"><a href="#body">Home</a> -</li>
 
-        <h3 class="navelement"><a href="#lebenslauf">About</a> -</h3>
+          <li class="nav__element"><a href="#lebenslauf">About</a> -</li>
 
-        <h3 class="navelement"><a href="#skills">Skills</a> -</h3>
+          <li class="nav__element"><a href="#skills">Skills</a> -</li>
 
-        <h3 class="navelement"><a href="#links">Links</a> -</h3>
+          <li class="nav__element"><a href="#links">Links</a> -</li>
 
-        <h3 class="navelement"><a href="#kontakt">Contact</a></h3>
+          <li class="nav__element"><a href="#kontakt">Contact</a></li>
+          <li>
+            <div class="nav__arrow" id="arrow">
+              <img class="nav__arrow-img" src="bilder/arrow.gif" alt="Arrow" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="arrow" id="arrow">
-          <img class="arrowimg" src="bilder/arrow.gif" alt="" />
-        </div>
-      </div>
-    </nav>
     <main>
-      <div class="containerdiv background-welcome positionrelative">
+      <section class="containerdiv background-welcome positionrelative">
         <br /><br />
         <br /><br />
-        <figure align="center" class="figure">
-          <img src="/bilder/lenz.jpg" class="image" />
+        <figure class="figure">
+          <img
+            src="/bilder/lenz.jpg"
+            class="lenz-image"
+            alt="Lenz Lösche sitting at desk"
+          />
         </figure>
-      </div>
+      </section>
       <div class="line"></div>
 
-      <div class="containerdiv background-vita" align="center" id="lebenslauf">
-        <div class="vitatable">
-          <div class="about">
+      <section class="containerdiv background-vita" id="lebenslauf">
+        <article class="about">
+          <div class="about__text">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
               iure esse asperiores quia eius dolorum similique repudiandae
               magnam tenetur cupiditate perspiciatis est quis illum expedita,
               quibusdam voluptates possimus quod ducimus!
-            </p>
-            <p>
+              <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex
               a, perferendis necessitatibus nam porro minima reiciendis? Illo
               ipsam repellendus esse recusandae dignissimos dolores! Placeat
               blanditiis reprehenderit dignissimos voluptas. Voluptatibus!
             </p>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
       <div class="line"></div>
-      <div class="containerdiv background-skills" id="skills">
-        <div class="skillsgrid">
-          <div class="skillitem"><p>HTML</p></div>
-          <div class="skillitem"><p>CSS</p></div>
-          <div class="skillitem"><p>JavaScript</p></div>
-          <div class="skillitem"><p>React</p></div>
-          <div class="skillitem"><p>Git</p></div>
-          <div class="skillitem"><p>Github</p></div>
-          <div class="skillitem"><p>CleanCode</p></div>
-        </div>
-      </div>
-      <div class="line"></div>
-
-      <div class="containerdiv background-links">
-        <div id="links" class="linkscontainer">
-          <div class="linksflexitem"></div>
-          <div class="linksflexitem">
-            <a href="">
-              <figure>
-                <img class="linkimage" src="/bilder/link.jpeg" alt="" />
-                <figcaption align="center">Github</figcaption>
-              </figure>
-            </a>
-
-            <a href="">
-              <figure>
-                <img class="linkimage" src="/bilder/link.jpeg" alt="" />
-                <figcaption align="center">Linkedin</figcaption>
-              </figure>
-            </a>
-
-            <a href="">
-              <figure>
-                <img class="linkimage" src="/bilder/link.jpeg" alt="" />
-                <figcaption align="center">Xing</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="linksflexitem">
-            <p>
-              <a href="">
-                <figure>
-                  <img class="linkimage" src="/bilder/link.jpeg" alt="" />
-                  <figcaption align="center">GitHub</figcaption>
-                </figure>
-              </a>
-
-              <a href="">
-                <figure>
-                  <img class="linkimage" src="/bilder/link.jpeg" alt="" />
-                  <figcaption align="center">freecodecamp</figcaption>
-                </figure>
-              </a>
-
-              <a href="">
-                <figure>
-                  <img class="linkimage" src="/bilder/link.jpeg" alt="" />
-                  <figcaption align="center">Link</figcaption>
-                </figure>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
+      <section class="containerdiv background-skills" id="skills">
+        <ul class="skill">
+          <li class="skill__item"><p>HTML</p></li>
+          <li class="skill__item"><p>CSS</p></li>
+          <li class="skill__item"><p>JavaScript</p></li>
+          <li class="skill__item"><p>React</p></li>
+          <li class="skill__item"><p>Git</p></li>
+          <li class="skill__item"><p>Github</p></li>
+          <li class="skill__item"><p>CleanCode</p></li>
+        </ul>
+      </section>
       <div class="line"></div>
 
-      <div class="containerdiv background-contact">
-        <div id="kontakt" align="center">
+      <section class="containerdiv background-links">
+        <div id="links" class="links">
+          <a href="https://github.com/lenzloesche">
+            <figure>
+              <img
+                class="links__image"
+                src="/bilder/github.jpeg"
+                alt="GitHub Logo"
+              />
+              <figcaption>Github</figcaption>
+            </figure>
+          </a>
+
+          <a href="https://www.linkedin.com/in/lenz-l%C3%B6sche-2090771ba/">
+            <figure>
+              <img
+                class="links__image"
+                src="/bilder/linkedin.jpeg"
+                alt="Linkedin Logo"
+              />
+              <figcaption>Linkedin</figcaption>
+            </figure>
+          </a>
+
+          <a href="https://www.xing.com/profile/Lenz_Loesche/cv">
+            <figure>
+              <img
+                class="links__image"
+                src="/bilder/xing.jpeg"
+                alt="Xing Logo"
+              />
+              <figcaption>Xing</figcaption>
+            </figure>
+          </a>
+
+          <a
+            href="https://www.freecodecamp.org/fccbe68db27-8f2c-4a2c-835f-4b528130b22d"
+          >
+            <figure>
+              <img
+                class="links__image"
+                src="/bilder/freecodecamp.jpeg"
+                alt="Freecodecamp Logo"
+              />
+              <figcaption>freecodecamp</figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+      <div class="line"></div>
+
+      <section class="containerdiv background-contact">
+        <div id="kontakt">
           <form>
-            <div class="contactcontainer">
+            <div class="contact">
               <label for="email">Your Email Adress: </label>
-              <input type="email" />
+              <input type="email" id="email" />
 
               <label for="text">Your Message: </label>
               <textarea id="text" cols="20" rows="10"></textarea>
@@ -136,12 +140,12 @@
             </div>
           </form>
         </div>
-      </div>
+      </section>
     </main>
     <div class="line"></div>
 
     <footer class="background-footer">
-      <p align="center">Copyright Lenz Lösche 2023</p>
+      <p>Copyright Lenz Lösche 2023</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,37 @@
+.background-skills {
+  background-color: #ff8f4a;
+}
+
+.skill__item {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffe440;
+  box-shadow: 5px 5px 5px black;
+  animation-name: circleanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleanimation {
+  0% {
+    transform: translate(5px);
+  }
+  50% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(5px);
+  }
+}
+
+.skill {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  height: 100%;
+  gap: 20px;
+  font-size: 26px;
+  flex-wrap: wrap;
+  list-style: none;
+}
